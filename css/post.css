@@ -1,0 +1,25 @@
+/*  CSS specific to blog-post page*/
+
+.blog-article-featured {
+    border-bottom: var(--clr-grey) 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.blog-article-recent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "secondary"
+         "main";
+            
+    margin-bottom: 2em;  
+}
+
+.blog-article-recent-main {
+   grid-area: main;
+}
+
+.blog-article-recent-secondary {
+  grid-area: secondary;
+}

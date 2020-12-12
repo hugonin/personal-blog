@@ -1,0 +1,66 @@
+/*  CSS specific to the home page  */
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--clr-grey);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--clr-accent);
+}
+
+.current-page {
+    border-bottom: 1px solid var(--clr-grey)
+}
+
+.current-page:hover {
+    color: var(--clr-grey);
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+header {
+    background: var(--clr-light);
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+footer {
+    background:  var(--clr-dark);
+    color: var(--clr-grey);
+    text-align: center;
+    padding: 2em 0;
+}
+
+

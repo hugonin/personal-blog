@@ -1,0 +1,224 @@
+/* basic CSS common for all pages*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .025em;
+}
+
+figure {
+    border: thin var(--clr-light) solid;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    margin: auto;
+ 
+}
+
+
+figcaption {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    font: italic smaller sans-serif;
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+}
+
+.figure-quote {
+    border: none;
+}
+
+.figcaption-quote {
+    background-color: transparent;
+    text-align: right;
+    margin-right: 1.5em;
+}
+
+
+/* Typography */
+
+h1, 
+h2,
+h3 {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-med);
+    color: var(--clr-dark);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    margin: 0;
+}
+
+h3 {
+    color: var(--clr-accent);
+}
+
+a {
+    color: var(--clr-accent);
+}
+
+a:hover,
+a:focus {
+    color:  var(--clr-dark);
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+u {
+    text-decoration: var(--clr-accent) underline;
+}
+
+.subtitle {
+    font-weight: var(--fw-bold);
+    color:  var(--clr-accent);
+    font-size: .75rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-article-title {
+    font-size: 1.5rem;
+}
+
+.blog-article-read-more,
+.blog-article-info {
+    font-size: .875rem;
+}
+
+.blog-article-read-more {
+    color: var(--clr-accent);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-article-read-more:hover,
+.blog-article-read-more:focus {
+    color: var(--clr-dark);
+    text-decoration: underline;
+}
+
+.blog-article-info {
+    margin: 2em 0;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.widget-recent-post-title {
+    color: var(--clr-dark);
+}
+
+/* Buttons */
+
+.blog-article-btn, 
+.blog-article-btn-prev,
+.blog-article-btn-next   {
+    padding: .5em 1.75em;
+    font-weight: 400;
+    margin: .5em 0;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--clr-grey);
+    justify-self: start;
+}
+
+.blog-article-btn:hover,
+.blog-article-btn:focus,
+.blog-article-btn-prev:hover,
+.blog-article-btn-prev:focus, 
+.blog-article-btn-next:hover,
+.blog-article-btn-next:focus {
+    color: var(--clr-dark);
+    background: var(--clr-grey);
+}
+
+.blog-article-link {
+    text-decoration: none;
+}
+
+/* Widgets  */
+
+.sidebar-widget {
+    border: 1px solid var(--clr-light); 
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--clr-light);
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: -1;
+}
+
+/* Card-about */
+
+.card-secondary {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.social-link {
+    align-self: center;
+
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
