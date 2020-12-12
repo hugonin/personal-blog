@@ -62,3 +62,39 @@
         object-fit: cover; 
     }
 }
+
+/* Card-about */
+
+@media (min-width: 600px) {
+    .card-secondary {
+        grid-template-areas: 
+          ". email . social ."
+    }
+    
+    .social-link {
+        text-align: left;
+    }
+    
+    .social-list {
+        justify-content: flex-end;
+    }
+}
+
+/* Footer */
+
+@media (min-width: 600px) {
+    footer {
+        grid-template-areas: 
+          ". main main social ."
+    }
+    
+    .footer-main {
+        text-align: left;
+    }
+    
+    .social-list {
+        justify-content: flex-end;
+    }
+}
+
+

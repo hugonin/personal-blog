@@ -84,7 +84,7 @@ a {
 
 a:hover,
 a:focus {
-    color:  var(--clr-dark);
+    color:  var(--clr-light);
 }
 
 strong {
@@ -205,20 +205,19 @@ u {
 
 .card-secondary {
     display: grid; 
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-areas:
+    ". email ."
+    ". social .";
 }
 
 .social-link {
-    align-self: center;
-
+    grid-area: email;
+    justify-self: center;
 }
 
 .social-list {
-    display: flex;
-    list-style: none;
+    grid-area: social;
 }
 
-.social-list__item {
-    margin: 0 .5em;
-}
+
+
